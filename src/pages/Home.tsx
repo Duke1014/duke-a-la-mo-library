@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom"
+
 function Home() {
 
     return(
-        <div>
+        <div className="Home">
             <h1>Home</h1>
             <p>
                 Add new media
             </p>
             <p>
-                Search
+                <Link to="/search">Search</Link>
             </p>
         </div>
     )
