@@ -1,5 +1,3 @@
-import mongoose, { Document, Schema } from "mongoose";
-
 export interface IMedia extends Document {
     id: number;
     title: string;
@@ -24,14 +22,3 @@ export interface IMedia extends Document {
 
     // Methods here:
 }
-
-const MediaSchema: Schema = new Schema({
-    id: { type: Number, required: true },
-    title: { type: String, required: true },
-    publish_year: { type: Date, required: true },
-    type: { type: String, required: true },
-    condition: { type: String, required: true },
-    user: { type: Schema.Types.ObjectId, ref: "User", required: true }
-})
-
-export default mongoose.model<IMedia>("Media", MediaSchema);
