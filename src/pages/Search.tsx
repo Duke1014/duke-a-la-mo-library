@@ -14,6 +14,7 @@ function Search() {
                     onChange={(e) => setSearch(e.target.value)}
                 />
                 <button type="submit">Search</button>
+                <button>Show All</button>
             </div>
         </div>
     )
