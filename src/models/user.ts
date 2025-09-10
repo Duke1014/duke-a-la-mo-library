@@ -1,4 +1,4 @@
-export interface IUser extends Document {
+export interface User extends Document {
     id: number;
     name: string;
     createdAt: Date;
